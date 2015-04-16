@@ -20,7 +20,9 @@ angular.module('example', ['ngRoute'])
     .controller('example1Controller', function($scope) {
         $scope.overrideMessage = function () {
             $scope.message = "Hello from the example 1 partial, controller by controller 1!";
-        }
+			document.getElementById("email").innerHTML = "Someguy@domain.com";
+		}
+		
     })
 
     .controller('example2Controller', function($scope){

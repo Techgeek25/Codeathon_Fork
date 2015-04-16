@@ -17,6 +17,10 @@
     <div class="panel-body">
         <p>Click the button to set $scope.message to something new. Notice the message above change!</p>
         <button class="btn btn-danger" ng-click="overrideMessage()">OVERRIDE</button>
+		
+		<p>{{message}}</p>
+		
+		<p id="email"></p>
         <p><strong>BUT</strong> the parent's scope message does not! This is prototypal inheritance in a nut shell - I can read, but not write.</p>
         <p>Also notice when you refresh the page, the controller is reloaded. Good as new!</p>
     </div>
