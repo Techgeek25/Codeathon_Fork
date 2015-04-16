@@ -1,0 +1,27 @@
+<div class="panel panel-danger">
+    <div class="panel-heading">
+        $scope.message:
+        <strong><span ng-bind="message">About Us</span></strong>
+    </div>
+    <div class="panel-body">
+        <p>Cigna is some health company that offers insurance, pretty much...<p>
+        <p>Do you want some candy?</p>
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        $parent.message:
+        <strong><span ng-bind="$parent.message"></span></strong>
+    </div>
+    <div class="panel-body">
+        <p>Do you want to know more?</p>
+        <button class="btn btn-danger" ng-click="overrideMessage()">Yes!</button>
+        <p><strong>Also</strong> You can E-mail us too, if you just click this link:</p>
+        <button class="btn btn-primary" ng-click="showMessage()">
+        $email.message:
+        <strong><span ng-bind="message">
+        <p>Also notice when you refresh the page, the controller is reloaded. Good as new!</p>
+    </div>
+</div>
+

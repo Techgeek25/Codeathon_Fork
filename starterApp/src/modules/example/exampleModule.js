@@ -8,25 +8,33 @@ angular.module('example', ['ngRoute'])
             controller: 'homeController'
         }).otherwise({
             redirectTo: '/'
-        }).when('/example1', {
-            templateUrl: 'modules/example/templates/example1.html',
+        }).when('/about', {
+            templateUrl: 'modules/example/templates/about.html',
             controller: 'example1Controller'
-        }).when('/example2', {
-            templateUrl: 'modules/example/templates/example2.html',
+        }).when('/dental', {
+            templateUrl: 'modules/example/templates/dental.html',
             controller: 'example2Controller'
         });
     }])
 
     .controller('example1Controller', function($scope) {
         $scope.overrideMessage = function () {
+<<<<<<< HEAD
             $scope.message = "Hello from the example 1 partial, controller by controller 1!";
 			document.getElementById("email").innerHTML = "Someguy@domain.com";
 		}
 		
+=======
+            $scope.message = "We are committed to providing the best care for our patients!";
+        }
+        $email.showMessage = function () {
+            $email.message = "Blahblah@somedomain.com"
+        }
+>>>>>>> origin/master
     })
 
     .controller('example2Controller', function($scope){
-        $scope.message = "Hello from the example 2 partial, controller by controller 2!";
+        $scope.message = "Here there is data on dental plans and various costs associated with them";
 
         $scope.list = [
             "USA",
